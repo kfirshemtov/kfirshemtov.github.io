@@ -69,17 +69,6 @@
       transition: 0.2s;
     }
 
-    .card img {
-      display: block;
-      margin: 12px auto 0 auto;
-      max-width: 100%;
-      max-height: 260px;
-      width: auto;
-      height: auto;
-      object-fit: contain;
-      border-radius: 10px;
-    }
-
     .card:hover {
       transform: translateY(-2px);
       border-color: #334155;
@@ -95,6 +84,17 @@
       margin-top: 6px;
       color: #94a3b8;
       font-size: 14px;
+    }
+
+    .card img {
+      display: block;
+      margin: 12px auto 0 auto;
+      max-width: 100%;
+      max-height: 260px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      border-radius: 10px;
     }
 
     .media {
@@ -155,38 +155,40 @@
     <h2>Selected Projects</h2>
 
     <div class="grid">
+
       <div class="card">
         <div class="card-title">Flexigon</div>
         <div class="card-desc">
           Text-driven geometry deformation system in Blender using learned priors for controllable 3D shape editing.
         </div>
-      
+
         <video class="media" autoplay muted loop playsinline>
           <source src="" type="video/webm">
         </video>
-      </div
+      </div>
 
       <div class="card">
         <div class="card-title">Light Field - Depth Estimation</div>
         <div class="card-desc">
           Depth estimation from Light Field Camera.
         </div>
-        <img src="imgs/depth_estimation.png" height="1154" width="2389"/>
+        <img src="imgs/depth_estimation.png" />
       </div>
 
       <div class="card">
         <div class="card-title">3D Reconstruction</div>
         <div class="card-desc">
-          3D Asset Generation from Depth Maps: Depth → mesh reconstruction → textured 3D asset
+          Depth-guided 3D Asset Generation: Depth → mesh reconstruction → textured 3D asset
         </div>
-        <img src="imgs/mesh_reconstruction.png" height="1513" width="3234"/>
+        <img src="imgs/mesh_reconstruction.png" />
       </div>
 
+      <div class="card">
         <div class="card-title">Multi-bounce Reflectometry</div>
         <div class="card-desc">
           Modeling indirect light transport and multi-bounce reflections for inverse rendering and scene understanding.
         </div>
-        <img src="imgs/reflectometry.png" height="256" width="256"/>
+        <img src="imgs/reflectometry.png" />
       </div>
 
       <div class="card">
@@ -194,9 +196,8 @@
         <div class="card-desc">
           Pipeline for generating large-scale synthetic datasets with controllable assets and domain randomization.
         </div>
-        <img src="imgs/face_render.png" height="753" width="2195"/>
+        <img src="imgs/face_render.png" />
       </div>
-
 
     </div>
 
@@ -209,4 +210,7 @@
     <div class="footer">
       Built with GitHub Pages
     </div>
-    
+
+  </div>
+</body>
+</html>
