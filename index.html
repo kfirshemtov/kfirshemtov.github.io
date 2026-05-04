@@ -1,4 +1,197 @@
-<div class="grid">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Kfir Shemtov | AI & 3D Research</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto;
+      background: #0b0f19;
+      color: #e5e7eb;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 24px;
+    }
+
+    .title {
+      font-size: 44px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      color: #94a3b8;
+      margin-top: 8px;
+      font-size: 18px;
+    }
+
+    .badges {
+      margin-top: 12px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      background: #111827;
+      border: 1px solid #1f2937;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      color: #93c5fd;
+    }
+
+    h2 {
+      margin-top: 50px;
+      font-size: 22px;
+      border-bottom: 1px solid #1f2937;
+      padding-bottom: 8px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #111827, #0f172a);
+      border: 1px solid #1f2937;
+      border-radius: 14px;
+      padding: 18px;
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      border-color: #334155;
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #f8fafc;
+    }
+
+    .card-desc {
+      margin-top: 6px;
+      color: #94a3b8;
+      font-size: 14px;
+    }
+
+    .media {
+      margin-top: 12px;
+      height: 180px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #1e293b, #0b1220);
+      border: 1px solid #1f2937;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #64748b;
+      font-size: 13px;
+    }
+
+    a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      margin-top: 60px;
+      color: #64748b;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <div class="title">Kfir Shemtov</div>
+    <div class="subtitle">
+      AI • Computer Vision • 3D Graphics • Generative Modeling
+    </div>
+
+    <div class="badges">
+      <div class="badge">3D Reconstruction</div>
+      <div class="badge">Differentiable Rendering</div>
+      <div class="badge">Generative AI</div>
+      <div class="badge">Geometry Processing</div>
+    </div>
+
+    <!-- About -->
+    <h2>Research Focus</h2>
+    <p style="color:#cbd5e1; max-width: 800px;">
+      I work on bridging deep learning with geometric representations in 3D.
+      My research spans inverse rendering, physically-based modeling,
+      and generative approaches for structured 3D understanding.
+    </p>
+
+    <!-- Projects -->
+    <h2>Selected Projects</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <div class="card-title">Flexigon</div>
+        <div class="card-desc">
+          Text-driven geometry deformation system in Blender using learned priors for controllable 3D shape editing.
+        </div>
+        <div class="media">3D Render / Blender Output</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Light Field - Depth Estimation</div>
+        <div class="card-desc">
+          Depth estimation from multi-view / light-field inputs using geometric constraints and neural refinement.
+        </div>
+        <div class="media">Depth Map Visualization</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Synthetic Data Generation</div>
+        <div class="card-desc">
+          Pipeline for generating large-scale synthetic datasets with controllable assets and domain randomization.
+        </div>
+        <div class="media">Synthetic Scene Render</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Multi-bounce Reflectometry</div>
+        <div class="card-desc">
+          Modeling indirect light transport and multi-bounce reflections for inverse rendering and scene understanding.
+        </div>
+        <div class="media">Light Transport Diagram</div>
+      </div>
+
+    </div>
+
+    <!-- Links -->
+    <h2>Links</h2>
+    <p>
+      <a href="https://github.com/kfirshemtov">GitHub</a>
+    </p>
+
+    <div class="footer">
+      Built with GitHub Pages
+    </div>
+
+  </div>
+</body>
+</html><div class="grid">
 
   <div class="card">
     <div class="card-title">Flexigon</div>
